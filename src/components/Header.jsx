@@ -10,11 +10,11 @@ function Header({ onMostrarProyecto }) {
     <header className="bg-gray-900 text-white py-10 px-6">
       <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6 text-center md:text-left">
         <div className="flex justify-center md:justify-end mt-6 md:mt-0">
-          <img
-            src="/public/foto.png"
-            alt="Foto de perfil"
-            className="w-28 h-28 md:w-32 md:h-32 rounded-full border-4 border-yellow-400 object-cover shadow-lg"
-          />
+       <img
+  src="/images/foto.png"
+  alt="Foto de perfil"
+  className="w-28 h-28 md:w-32 md:h-32 rounded-full border-4 border-yellow-400 object-cover shadow-lg"
+/>
         </div>
 
         <div className="md:col-span-2 space-y-4">
