@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Pokemon from './components/Pokemons';
 import SkillsCarousel from './components/Skills';
 import MyTasks from './components/mytasks';
+import VisorPDF from './components/mihojadevida';
 function MiComponente() {
 
   const [proyectoActual,setProyectoactual] = useState(null);
@@ -22,6 +23,7 @@ setProyectoactual(variable);
       <section id="proyectos" className="py-10">
         {proyectoActual === "pokemon" && <Pokemon />}
         {proyectoActual === "tareas" && <MyTasks />}
+          {proyectoActual === "contacto" && <VisorPDF />}
       </section>
     </div>
   );

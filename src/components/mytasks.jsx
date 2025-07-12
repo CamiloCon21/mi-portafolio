@@ -67,15 +67,19 @@ function MyTasks() {
       onChange={handleChange}
       className="bg-gray-800 text-white border border-gray-600 p-2 rounded w-full"
     />
-
-    <input
+ <div>
+  <h1>Fecha Inicio</h1>
+  <input
       type="date"
       name="fechainicio"
       value={form.fechainicio}
       onChange={handleChange}
       className="bg-gray-800 text-white border border-gray-600 p-2 rounded w-full"
     />
-
+ </div>
+    
+    <div>
+    <h1>Fecha FIn</h1>
     <input
       type="date"
       name="fechafin"
@@ -84,6 +88,8 @@ function MyTasks() {
       className="bg-gray-800 text-white border border-gray-600 p-2 rounded w-full"
     />
 
+    </div>
+    
     <div className="sm:col-span-2 flex justify-center">
       <button
         type="submit"
