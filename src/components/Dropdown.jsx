@@ -20,7 +20,9 @@ function DropdownProjects({onMostrarProyecto}) {
       {open && (
         <ul className="absolute bg-gray-800 mt-2 rounded shadow-lg py-2 w-48 text-left z-10">
           <li>
-           <button  onClick={() => validar("pokemon")}>
+           <button  
+           className="block px-4 py-2 hover:bg-gray-700 text-white w-full text-left"
+           onClick={() => validar("pokemon")}>
              Pokédex con React</button>
             
           </li>
@@ -31,7 +33,7 @@ function DropdownProjects({onMostrarProyecto}) {
                 onMostrarProyecto("tareas");
               }}
               className="block px-4 py-2 hover:bg-gray-700 text-white w-full text-left"
-            >Gestor de Tareass
+            >Gestor de Tareas
             </button>
           </li>
 
