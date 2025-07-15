@@ -36,6 +36,17 @@ function DropdownProjects({onMostrarProyecto}) {
             >Gestor de Tareas
             </button>
           </li>
+          
+           <li>
+            <button
+              onClick={() => {
+                setOpen(false);
+                onMostrarProyecto("Gestor");
+              }}
+              className="block px-4 py-2 hover:bg-gray-700 text-white w-full text-left"
+            >Gestor de Finanzas
+            </button>
+          </li>
 
           {/* Agrega más proyectos aquí si quieres */}
         </ul>
