@@ -8,6 +8,8 @@
   import Home from './components/Finanzas/Home'; // asegúrate que exista
   import { useState } from "react";
   import Liquidaciones from "./components/Finanzas/Liquidaciones";
+import { CartContext } from "./components/carritodecompras/cartcontext";
+import CartWidget from "./components/carritodecompras/cartWidget";
 
   function MiComponente() {
     const [proyectoActual, setProyectoactual] = useState(null);
@@ -21,9 +23,7 @@
     };
 
     const [usuariologueado,setUsuarioLogueado] = useState(null);
-
-    
-
+    const [cart, setCart] = useState([]); // ✅ CORRECTO
     return (
       <div className="bg-gray-950 min-h-screen text-white font-sans">
         <Header onMostrarProyecto={Mostrarproyecto} />
@@ -42,7 +42,21 @@
             }
           />
           <Route path="/home" element={<Home Usuario={usuariologueado} />} />
-            <Route path="/Liquidaciones" element={<Liquidaciones />} />
+          <Route path="/Liquidaciones" element={<Liquidaciones />} />
+          <Route path="/Carrito" element={
+     <CartContext.Provider value={{ cart, setCart }}>
+      <div>
+        <h1>Tienda</h1>
+        <CartWidget />
+      </div>
+    </CartContext.Provider>
+
+
+          } />
+
+
+
+
         </Routes>
       </div>
     );

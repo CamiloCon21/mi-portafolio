@@ -48,6 +48,17 @@ function DropdownProjects({onMostrarProyecto}) {
             </button>
           </li>
 
+   <li>
+  <a
+    href="https://e-commerce-react-pearl-seven.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block px-4 py-2 hover:bg-gray-700 text-white w-full text-left"
+  >
+    E-commerce de Tecnología
+  </a>
+</li>
+
           {/* Agrega más proyectos aquí si quieres */}
         </ul>
       )}
