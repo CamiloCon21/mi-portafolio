@@ -27,7 +27,7 @@ function VisorPDF({ isOpen, onClose }) {
         </button>
 
         <Document
-          file="/cv_Ivan_contreras.pdf"
+          file="/Cv_Camilo_Contreras.pdf"
           onLoadSuccess={onDocumentLoadSuccess}
         >
           <Page
